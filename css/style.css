@@ -13,6 +13,9 @@
 html {
   margin: 0;
   padding: 0;
+  font-family: Roboto, Noto Sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 0.01em;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -254,9 +257,17 @@ header .top_area .form-profile .form-right .resign {
 }
 .second_header nav {
   margin: 0 10%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: Roboto, Noto Sans, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .second_header ul {
   padding: 0;
+  font-size: 14px;
   align-items: center;
 }
 .second_header li {
@@ -266,6 +277,7 @@ header .top_area .form-profile .form-right .resign {
   padding: 0 20px;
   position: relative;
   display: inline-block;
+  font-weight: 500;
 }
 .second_header li:hover .dropdown-content {
   display: block;
@@ -289,11 +301,13 @@ header .top_area .form-profile .form-right .resign {
   line-height: 30px;
   text-align: left;
   min-width: 300px;
-  font-weight: 500;
   border-bottom: 1px solid #cdc;
   color: black;
   display: block;
   height: 30px;
+  text-align: left;
+  opacity: 0.8;
+  font-weight: normal;
 }
 
 .menu {
@@ -310,6 +324,9 @@ header .top_area .form-profile .form-right .resign {
   height: 60px;
   line-height: 60px;
   margin: 0 20px;
+  color: #4A4A4A;
+  font-size: 14px;
+  font-weight: 500;
 }
 .menu .menu-content .menu_item img {
   width: 18px;
@@ -323,6 +340,7 @@ header .top_area .form-profile .form-right .resign {
 
 .search {
   height: 60px;
+  width: 100%;
   background-color: #fff;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
@@ -335,9 +353,9 @@ header .top_area .form-profile .form-right .resign {
   max-width: 160px;
   min-width: 100px;
   height: 36px;
-  margin: 6px 7px;
+  margin: 5px 5px;
   background-color: #f9fafb;
-  font-weight: 500;
+  font-weight: normal;
   position: relative;
 }
 .search .content_search button:hover {
@@ -437,17 +455,19 @@ header .top_area .form-profile .form-right .resign {
 }
 .content .content-list {
   display: flex;
+  flex-wrap: wrap;
   margin-left: -8px;
   margin-right: -8px;
+  width: 100%;
 }
 .content .content-list .col {
   padding-left: 8px;
   padding-right: 8px;
   margin-bottom: 16px;
+  width: 30%;
 }
 .content .content-list .col3 {
   flex: 0 0 32%;
-  max-width: 32%;
 }
 .content .content-list .col3 .item {
   width: 100%;
@@ -567,20 +587,16 @@ header .top_area .form-profile .form-right .resign {
 .content .content-list .col3 .item .proflie_post .share {
   min-width: 40px;
   position: relative;
-  padding: 5px 10px 16px 10px;
 }
 .content .content-list .col3 .item .proflie_post .share img {
   text-align: center;
   width: 17px;
   margin-top: 18px;
 }
-.content .content-list .col3 .item .proflie_post .share:hover .sotical {
-  display: block;
-}
 .content .content-list .col3 .item .proflie_post .share .sotical {
   display: none;
   position: absolute;
-  top: 34px;
+  bottom: 0;
   left: calc(100% - 38px);
   height: 149px;
   width: 252px;
@@ -634,6 +650,9 @@ header .top_area .form-profile .form-right .resign {
 }
 .content .content-list .col3 .item .proflie_post .share .sotical .share-social li a img {
   width: 75%;
+}
+.content .content-list .col3 .item .proflie_post .share:hover .sotical {
+  display: block;
 }
 .content .content-list .col3 .item .proflie_post .count {
   padding: 5px 10px 16px 10px;
@@ -694,6 +713,9 @@ header .top_area .form-profile .form-right .resign {
 }
 .content .des .img_house {
   text-align: center;
+}
+.content .des .img_house img {
+  width: 100%;
 }
 
 footer .content_footer {
@@ -778,7 +800,7 @@ footer .fix-bottom .btn-reg .btn-reg-content i {
   width: 20px;
   height: 20px;
   float: left;
-  margin-right: 5px;
+  margin-left: 15px;
   margin-top: -2px;
 }
 footer .upTop {
@@ -798,6 +820,10 @@ footer .upTop {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   z-index: 999;
+}
+
+input:focus-within .list_search {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

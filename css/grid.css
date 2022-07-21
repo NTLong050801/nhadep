@@ -1,0 +1,202 @@
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  header .top_area .form-search, .form-profile {
+    display: none;
+  }
+  .content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .content .content-list .col {
+    width: 100%;
+  }
+  .content .content-list .col .item:hover .img_item .save {
+    display: none;
+  }
+  .content .content-list .col .item .proflie_post .people {
+    min-width: 100px;
+  }
+  .content .content-list .col .item .proflie_post .count {
+    display: none;
+  }
+  .content .content-list .col .item .proflie_post .share:hover .sotical {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  .content .content-list .col .item .proflie_post .share:hover .sotical .share-social li a img {
+    float: left;
+    text-align: left;
+    width: 100%;
+  }
+  .content .content-list .col3 {
+    flex: 100% !important;
+  }
+  .menu {
+    margin: 0;
+    padding: 0;
+    background-color: #1187d2;
+    position: fixed;
+    width: 100%;
+    z-index: 1009;
+  }
+  .menu .menu-content {
+    width: 100%;
+  }
+  .menu .menu-content .col-6 {
+    width: 100%;
+    color: white;
+    font-size: 11px;
+    margin-right: 0;
+    float: none;
+    display: inline-block;
+    color: #fff;
+  }
+  .search {
+    padding-top: 60px;
+    position: relative;
+  }
+  .search .content_search {
+    margin: 0;
+    padding-right: 0 !important;
+    width: 100%;
+    overflow: auto !important;
+    white-space: nowrap;
+  }
+  .search .content_search button {
+    display: inline-block;
+  }
+  .search .content_search button:focus-within .search_drop {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    z-index: 1000;
+  }
+  .search .content_search button:focus-within .search_drop ul li:first-child {
+    text-align: center;
+  }
+  .content-list {
+    width: 100%;
+  }
+  .content-list .col .col3 {
+    width: 100%;
+  }
+  .content .des {
+    margin: 0px 0px;
+  }
+  footer {
+    display: none;
+  }
+  .second_header {
+    display: none;
+  }
+}
+@media screen and (min-width: 667px) and (max-width: 769px) {
+  header .top_area .form-search, .form-profile {
+    display: none;
+  }
+  .content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .content .content-list .col {
+    width: 45%;
+  }
+  .content .content-list .col .item {
+    position: relative;
+  }
+  .content .content-list .col .item .item .img_item img {
+    text-align: left;
+  }
+  .content .content-list .col .item:hover .img_item .save {
+    display: none;
+  }
+  .content .content-list .col .item .proflie_post .people {
+    min-width: 100px;
+  }
+  .content .content-list .col .item .proflie_post .count {
+    display: none;
+  }
+  .content .content-list .col .item .proflie_post .share:hover .sotical {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  .content .content-list .col .item .proflie_post .share:hover .sotical .share-social li a img {
+    float: left;
+    text-align: left;
+    width: 30%;
+  }
+  .content .content-list .col3 {
+    flex: 0 45% !important;
+  }
+  .menu {
+    margin: 0;
+    padding: 0;
+    background-color: #1187d2;
+    position: fixed;
+    width: 100%;
+    z-index: 1009;
+  }
+  .menu .menu-content {
+    width: 100%;
+  }
+  .menu .menu-content .col-6 {
+    width: 40%;
+    color: white;
+    font-size: 11px;
+    float: none;
+    display: inline-block;
+    position: relative;
+    color: #fff;
+  }
+  .search {
+    padding-top: 60px;
+    position: relative;
+  }
+  .search .content_search {
+    margin: 0;
+    padding-right: 0 !important;
+    width: 100%;
+    overflow: auto !important;
+    white-space: nowrap;
+  }
+  .search .content_search button {
+    display: inline-block;
+  }
+  .search .content_search button:focus-within .search_drop {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    z-index: 1000;
+  }
+  .search .content_search button:focus-within .search_drop ul li:first-child {
+    text-align: center;
+  }
+  .content-list {
+    width: 100%;
+  }
+  .content-list .col .col3 {
+    width: 100%;
+  }
+  .content .des {
+    margin: 0px 0px;
+  }
+  footer {
+    display: none;
+  }
+  .second_header {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=grid.css.map */
