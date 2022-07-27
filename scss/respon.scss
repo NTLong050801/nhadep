@@ -1,0 +1,211 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.grid{
+    width:100%;
+    display:block;
+}
+.wide{
+    max-width: 1200px;
+    margin:0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:-4px;
+    margin-right:-4px;
+}
+.col{
+    padding-left:16px;
+    padding-right:16px;
+}
+@media screen and (max-width:480) {
+    .row{
+        margin-left:-8px;
+        margin-right:-8px;
+}
+.col{
+        padding-left: 8px;
+        padding-right: 8px;
+}
+    @for $i from 0 through 12{
+        $width:percentage(calc(1 / 12)*$i);
+        @if $i == 0 {
+                  .s-#{$i}{
+                            display: none;;
+                  }
+        }
+        @else {
+                  .s-#{$i}{
+                            flex: 0 0 $width;
+                            max-width: $width ;
+                  }
+        }        
+    }
+    @for $i from 0 through 12{
+        $width:percentage(calc(1 / 12)*$i);        
+                  .s-o-#{$i}{
+                            margin-left: $width;
+                            
+                  }
+              
+    }
+    
+}
+// ss
+@media screen and (min-width:480px) and (max-width:768px) {
+        .row{
+                  margin-left:-8px;
+                  margin-right:-8px;
+        }
+        .col{
+                  padding-left: 8px;
+                  padding-right: 8px;
+        }
+        @for $i from 1 through 12{
+                  .wide .ss-#{$i}{
+                            display: block;
+                  }
+        }
+        @for $i from 0 through 12{
+                  $width:percentage(calc(1 / 12)*$i);
+                  @if $i == 0 {
+                            .ss-#{$i}{
+                                      display: none;
+                            }
+                  }
+                  @else {
+                            .ss-#{$i}{
+                                      flex: 0 0 $width;
+                                      max-width: $width;
+                            }
+                  }        
+        }
+        @for $i from 0 through 12{
+                  $width:percentage(calc(0.5 / 12)*$i);        
+                            .ss-o-#{$i}{
+                                      margin-left: $width;
+                                      
+                            }
+                        
+        }
+    
+}
+//m
+@media screen and (min-width:769px) and (max-width:920px) {
+    .row{
+              margin-left:-8px;
+              margin-right:-8px;
+    }
+    .col{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    @for $i from 1 through 12{
+              .wide .m-#{$i}{
+                        display: block;
+              }
+    }
+    @for $i from 0 through 12{
+              $width:percentage(calc(1 / 12)*$i);
+              @if $i == 0 {
+                        .m-#{$i}{
+                                  display: none;
+                        }
+              }
+              @else {
+                        .m-#{$i}{
+                                  flex: 0 0 $width;
+                                  max-width: $width;
+                        }
+              }        
+    }
+    @for $i from 0 through 12{
+              $width:percentage(calc(0.5 / 12)*$i);        
+                        .m-o-#{$i}{
+                                  margin-left: $width;
+                                  
+                        }
+                    
+    }
+
+}
+//l
+@media screen and (min-width:921px) and (max-width:1200px) {
+    .row{
+              margin-left:-8px;
+              margin-right:-8px;
+    }
+    .col{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    @for $i from 1 through 12{
+              .wide .l-#{$i}{
+                        display: block;
+              }
+    }
+    @for $i from 0 through 12{
+              $width:percentage(calc(1 / 12)*$i);
+              @if $i == 0 {
+                        .l-#{$i}{
+                                  display: none;
+                        }
+              }
+              @else {
+                        .l-#{$i}{
+                                  flex: 0 0 $width;
+                                  max-width: $width;
+                        }
+              }        
+    }
+    @for $i from 0 through 12{
+              $width:percentage(calc(0.5 / 12)*$i);        
+                        .l-o-#{$i}{
+                                  margin-left: $width;
+                                  
+                        }
+                    
+    }
+
+}
+//ll
+@media screen and (min-width:1201px) {
+    .row{
+        margin-left:-8px;
+        margin-right:-8px;
+}
+.col{
+        padding-left: 8px;
+        padding-right: 8px;
+}
+@for $i from 1 through 12{
+        .wide .ll-#{$i}{
+                  display: block;
+        }
+}
+@for $i from 0 through 12{
+        $width:percentage(calc(1 / 12)*$i);
+        @if $i == 0 {
+                  .ll-#{$i}{
+                            display: none;
+                  }
+        }
+        @else {
+                  .ll-#{$i}{
+                            flex: 0 0 $width;
+                            max-width: $width;
+                  }
+        }        
+}
+@for $i from 0 through 12{
+        $width:percentage(calc(0.5 / 12)*$i);        
+                  .ll-o-#{$i}{
+                            margin-left: $width;
+                            
+                  }
+              
+}
+}

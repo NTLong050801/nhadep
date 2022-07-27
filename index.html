@@ -6,19 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/grid.css">
+    <!-- <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css"> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
     <title>999+ mẫu thiết kế nhà đẹp hiện đại, mới nhất 2022</title>
 </head>
 
 <body id="pos_index">
-    <div class="pos_index" >
-        <header >
+    <div class="pos_index">
+        <header>
             <div class="top_area">
+                <div class="tab3">
+                    <div class="barr"></div>
+                    <div class="barr"></div>
+                    <div class="barr"></div>
+                </div>
                 <div class="logo">
-                    <a href="#"><img src="./images/logo-homedy-white.svg" alt=""></a>
+                    <a class="a_logo_one" href="#"><img src="./images/logo-homedy.svg" alt=""></a>
+                    <a class="a_logo_two" href="#"><img src="./images/logo-homedy-white.svg" alt=""></a>
 
                 </div>
                 <!-- <div class="hv_logo">
@@ -27,12 +35,12 @@
                 <div class="form-search">
                     <div class="form-group">
                         <div class="form-group-one">
-                            <button>
-                                <img src="./images/mua-ban.svg" alt="">
-                                Mua Bán
+                            <button class="btn_selectBuy">
+                                <img class="icon_buy" src="./images/mua-ban.svg" alt="">
+                                <span>Mua Bán</span>
                                 <i class="bi bi-chevron-compact-down"></i>
                                 <div class="dropdown_buyhome">
-                                    <ul>
+                                    <ul class="ul_drdown">
                                         <li><img src="./images/mua-ban.svg" alt="">Mua bán</li>
                                         <li><img src="https://static.homedy.com/src/images/v1/cho-thue.svg" alt="">Cho
                                             thuê</li>
@@ -46,9 +54,6 @@
                                     </ul>
                                 </div>
                             </button>
-
-
-
                         </div>
                         <div class="form-group-two">
                             <input data-v-792c0572="" md-menu-trigger="" type="search" name="name" value=""
@@ -78,9 +83,9 @@
                     </div>
 
                     <div class="btn_map">
-                        <button>
-                            <img src="./images/map.svg" alt="">
-                            Bản đồ
+                        <button class="btn_img_map">
+                            <img class="img_map" src="./images/map.svg" alt="">
+                            <span>Bản đồ</span>
                         </button>
 
                     </div>
@@ -96,76 +101,84 @@
                         <a href="#" class="resign">ĐĂNG TIN</a>
                     </div>
                 </div>
-
+                <div class="icon-search">
+                    <img src="https://static.homedy.com/src/images/icon/search.svg" alt="">
+                </div>
 
             </div>
 
         </header>
         <div class="second_header grid ">
+            <button class="close-menu-bar"></button>
             <nav class="row">
+
+                <div class="login-option">
+                    <a href="">Đăng ký</a>
+                    <a href="">Đăng nhập</a>
+                </div>
                 <ul class="col ">
                     <li>
-                        <a href="">CỘNG ĐỒNG </a>
+                        <a href="#">CỘNG ĐỒNG </a>
                         <div class="dropdown-content">
-                            <a href="#">THỊ TRƯỜNG</a>
-                            <a href="#">ĐÁNH GIÁ DỰ ÁN</a>
-                            <a href="#">QUY HOẠCH</a>
-                            <a href="#">HẠ TẦNG</a>
-                            <a href="#">TƯ VẤN</a>
+                            <a href="#">Thị trường</a>
+                            <a href="#">Đánh giá dự án</a>
+                            <a href="#">Quy hoạch</a>
+                            <a href="#">Hạ tầng</a>
+                            <a href="#">Tư vấn</a>
                         </div>
 
                     </li>
                     <li>
-                        <a href="">DỰ ÁN </a>
+                        <a href="#">DỰ ÁN </a>
                         <div class="dropdown-content">
-                            <a href="#">THỊ TRƯỜNG</a>
-                            <a href="#">ĐÁNH GIÁ DỰ ÁN</a>
-                            <a href="#">QUY HOẠCH</a>
-                            <a href="#">HẠ TẦNG</a>
-                            <a href="#">TƯ VẤN</a>
+                            <a href="#">Dự án căn hộ</a>
+                            <a href="#">Dự án thương mại</a>
+                            <a href="#">Dự án nhà biệt thự liền kề</a>
+                            <a href="#">Dự án đất nền</a>
+                            <a href="#">Dự án mặt bằng bán lẻ</a>
                         </div>
                     </li>
-                    <li><a href="">MUA BÁN</a>
+                    <li><a href="#">MUA BÁN</a>
                         <div class="dropdown-content">
-                            <a href="#">DỰ ÁN CĂN HỘ</a>
-                            <a href="#">DỰ ÁN NHÀ THƯƠNG MẠI</a>
-                            <a href="#">DỰ ÁN NHÀ BIỆT THỰ LIỀN KỀ</a>
-                            <a href="#">DỰ ÁN KHÁCH SẠN</a>
-                            <a href="#">DỰ ÁN MẶT BẰNG BÁN LẺ</a>
+                            <a href="#">Bán căn hộ chung cư</a>
+                            <a href="#">Bán nhà riêng</a>
+                            <a href="#">Bán nhà mặt phố</a>
+                            <a href="#">Bán nhà phố thương mại</a>
+                            <a href="#">Bán đất</a>
                         </div>
                     </li>
-                    <li><a href="">CHO THUẾ</a>
+                    <li><a href="#">CHO THUẾ</a>
                         <div class="dropdown-content">
-                            <a href="#">DỰ ÁN CĂN HỘ</a>
-                            <a href="#">DỰ ÁN NHÀ THƯƠNG MẠI</a>
-                            <a href="#">DỰ ÁN NHÀ BIỆT THỰ LIỀN KỀ</a>
-                            <a href="#">DỰ ÁN KHÁCH SẠN</a>
-                            <a href="#">DỰ ÁN MẶT BẰNG BÁN LẺ</a>
+                            <a href="#">Cho thuê căn hộ</a>
+                            <a href="#">Cho thuê căn hộ dịch vụ</a>
+                            <a href="#">Cho thuê nhà riêng</a>
+                            <a href="#">Cho thuê nhà mặt phố</a>
+                            <a href="#">Cho thuê văn phòng</a>
+                            <a href="#">Cho thuê nhà trọ</a>
                         </div>
                     </li>
-                    <li><a href="">CHUYÊN GIA</a>
+                    <li><a href="#">CHUYÊN GIA</a>
                         <div class="dropdown-content">
-                            <a href="#">DỰ ÁN CĂN HỘ</a>
-                            <a href="#">DỰ ÁN NHÀ THƯƠNG MẠI</a>
-                            <a href="#">DỰ ÁN NHÀ BIỆT THỰ LIỀN KỀ</a>
-                            <a href="#">DỰ ÁN KHÁCH SẠN</a>
-                            <a href="#">DỰ ÁN MẶT BẰNG BÁN LẺ</a>
+                            <a href="#">Nhà môi giới</a>
+                            <a href="#">Tư vấn thiết kế</a>
+                            <a href="#">Doanh nghiệp</a>
+                            
                         </div>
                     </li>
-                    <li><a href="">THIẾT KÉ NHÀ ĐẸP</a></li>
-                    <li><a href="">TIN TỨC</a></li>
-                    <li><a href="">TIỆN ÍCH</a></li>
+                    <li><a href="#">THIẾT KÉ NHÀ ĐẸP</a></li>
+                    <li><a href="#">TIN TỨC</a></li>
+                    <li><a href="#">TIỆN ÍCH</a></li>
                 </ul>
             </nav>
         </div>
     </div>
     <div class="menu">
         <div class="menu-content row">
-            <div class="menu_item col-6">
-                <img src="./images/yeu-nha.svg" alt=""> NHÀ ĐẸP
+            <div class="menu_item col-6 ">
+                <a href="#"><img src="./images/yeu-nha.svg" alt=""> NHÀ ĐẸP</a>
             </div>
-            <div class="menu_item col-6">
-                <img src="./images/yeu-decor.svg" alt=""> PHÒNG
+            <div class="menu_item col-6 ">
+                <a href="#"><img src="./images/yeu-decor.svg" alt=""> PHÒNG</a>
             </div>
         </div>
     </div>
@@ -245,17 +258,13 @@
         </div>
         <h1>Tổng hợp những mẫu thiết kế nhà đẹp hiện đại, mới nhất 2022</h1>
         <div class="content-list">
-            <div class="col col3">
+            <div class="coll col3">
                 <div class="item">
                     <div class="img_item">
                         <img src="./images/133321483-1675276782650227-798268894761561921-o-637454363386116368.jpg_480x320.jpg"
                             alt="">
-                        <div class="save">
-                            <div class="save_img">
-                                <img src="./images/save-fill.svg" alt="">
-                                LƯU
-                            </div>
-
+                        <div class="hv_btn_save">
+                            <button><i></i>Lưu</button>
                         </div>
                     </div>
                     <div class="title">
@@ -269,148 +278,45 @@
                                 <p>An Quỳnh</p>
                             </a>
                         </div>
-                        <div class="share">
-                            <a href=""><img src="./images/chia-se.svg" alt=""></a>
-                            <div class="sotical">
-                                <label for="">
-                                    <span class="lb_share"></span>Chia Sẻ
-                                </label>
-                                <ul class="share-social">
-                                    <li><a href="#"><img src="./images/fb.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="./images/ins.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="./images/zalo.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="./images/in.svg" alt=""></a></li>
+                        <div class="menu_icon">
+                            <div class="share">
+                                <a href=""><img class="share_img" src="./images/chia-se.svg" alt=""></a>
+                                <div class="sotical">
+                                    <label for="">
+                                        <span class="lb_share"></span>Chia Sẻ
+                                    </label>
+                                    <ul class="share-social">
+                                        <li><a href="#"><img src="./images/fb.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="./images/ins.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="./images/zalo.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="./images/in.svg" alt=""></a></li>
 
 
-                                </ul>
-                                <label for="" class="lb_copy">
-                                    <a href="#"> <span class="copy_url"></span>Sao chép liên kết</a>
-                                </label>
+                                    </ul>
+                                    <label for="" class="lb_copy">
+                                        <a href="#"> <span class="copy_url"></span>Sao chép liên kết</a>
+                                    </label>
+                                </div>
+
                             </div>
-
-                        </div>
-                        <div class="count">
-                            <img src="./images/view-02.svg" alt=""><span>2019</span>
+                            <div class="count">
+                                <img src="./images/view-02.svg" alt=""><span>2019</span>
+                            </div>
+                            <div class="lb_save">
+                                <img src="./images/save-fill.svg" alt=""><span>10</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <div class="col col3">
+            <div class="coll col3">
                 <div class="item">
                     <div class="img_item">
                         <img src="./images/133321483-1675276782650227-798268894761561921-o-637454363386116368.jpg_480x320.jpg"
                             alt="">
-                        <div class="save">
-                            <div class="save_img">
-                                <img src="./images/save-fill.svg" alt="">
-                                LƯU
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="title">
-                        <h3>Thiết kế công trình Phan Thiết House với lối kiến trúc hiện đại thoát khỏi sự ồn ào của cuộc
-                            sống</h3>
-                    </div>
-                    <div class="proflie_post">
-                        <div class="people">
-                            <a href=""><img
-                                    src="./images/foody-mobile-cafe4-jpg-414-635773918024009959-637441439845895746.jpg_80x80.jpg"
-                                    alt="">
-                                <p>An Quỳnh</p>
-                            </a>
-                        </div>
-                        <div class="share">
-                            <a href=""><img src="./images/chia-se.svg" alt=""></a>
-                            <div class="sotical">
-                                <label for="">
-                                    <span class="lb_share"></span>Chia Sẻ
-                                </label>
-                                <ul class="share-social">
-                                    <li><a href="#"><img src="./images/fb.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="./images/ins.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="./images/zalo.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="./images/in.svg" alt=""></a></li>
-
-
-                                </ul>
-                                <label for="" class="lb_copy">
-                                    <a href="#"> <span class="copy_url"></span>Sao chép liên kết</a>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="count">
-                            <img src="./images/view-02.svg" alt=""><span>2019</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col col3">
-                <div class="item">
-                    <div class="img_item">
-                        <img src="./images/133321483-1675276782650227-798268894761561921-o-637454363386116368.jpg_480x320.jpg"
-                            alt="">
-                        <div class="save">
-                            <div class="save_img">
-                                <img src="./images/save-fill.svg" alt="">
-                                LƯU
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="title">
-                        <h3>Lã House - Công trình khách sạn và căn hộ cho thuê độc đáo rộng 160m2 tại Nha Trang</h3>
-                    </div>
-                    <div class="proflie_post">
-                        <div class="people">
-                            <a href=""><img
-                                    src="./images/foody-mobile-cafe4-jpg-414-635773918024009959-637441439845895746.jpg_80x80.jpg"
-                                    alt="">
-                                <p>An Quỳnh</p>
-                            </a>
-                        </div>
-                        <div class="share">
-                            <a href=""><img src="./images/chia-se.svg" alt=""></a>
-                            <div class="sotical">
-                                <label for="">
-                                    <span class="lb_share"></span>Chia Sẻ
-                                </label>
-                                <ul class="share-social">
-                                    <li><a href="#"><img src="./images/fb.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="./images/ins.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="./images/zalo.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="./images/in.svg" alt=""></a></li>
-
-
-                                </ul>
-                                <label for="" class="lb_copy">
-                                    <a href="#"> <span class="copy_url"></span>Sao chép liên kết</a>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="count">
-                            <img src="./images/view-02.svg" alt=""><span>2019</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-
-            <div class="col col3">
-                <div class="item">
-                    <div class="img_item">
-                        <img src="./images/133321483-1675276782650227-798268894761561921-o-637454363386116368.jpg_480x320.jpg"
-                            alt="">
-                        <div class="save">
-                            <div class="save_img">
-                                <img src="./images/save-fill.svg" alt="">
-                                LƯU
-                            </div>
-
+                        <div class="hv_btn_save">
+                            <button><i></i>Lưu</button>
                         </div>
                     </div>
                     <div class="title">
@@ -424,49 +330,49 @@
                                 <p>An Quỳnh</p>
                             </a>
                         </div>
-                        <div class="share">
-                            <a href=""><img src="./images/chia-se.svg" alt=""></a>
-                            <div class="sotical">
-                                <label for="">
-                                    <span class="lb_share"></span>Chia Sẻ
-                                </label>
-                                <ul class="share-social">
-                                    <li><a href="#"><img src="./images/fb.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="./images/ins.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="./images/zalo.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="./images/in.svg" alt=""></a></li>
+                        <div class="menu_icon">
+                            <div class="share">
+                                <a href=""><img class="share_img" src="./images/chia-se.svg" alt=""></a>
+                                <div class="sotical">
+                                    <label for="">
+                                        <span class="lb_share"></span>Chia Sẻ
+                                    </label>
+                                    <ul class="share-social">
+                                        <li><a href="#"><img src="./images/fb.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="./images/ins.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="./images/zalo.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="./images/in.svg" alt=""></a></li>
 
 
-                                </ul>
-                                <label for="" class="lb_copy">
-                                    <a href="#"> <span class="copy_url"></span>Sao chép liên kết</a>
-                                </label>
+                                    </ul>
+                                    <label for="" class="lb_copy">
+                                        <a href="#"> <span class="copy_url"></span>Sao chép liên kết</a>
+                                    </label>
+                                </div>
+
                             </div>
-                        </div>
-                        <div class="count">
-                            <img src="./images/view-02.svg" alt=""><span>2019</span>
+                            <div class="count">
+                                <img src="./images/view-02.svg" alt=""><span>2019</span>
+                            </div>
+                            <div class="lb_save">
+                                <img src="./images/save-fill.svg" alt=""><span>10</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <div class="col col3">
+            <div class="coll col3">
                 <div class="item">
                     <div class="img_item">
                         <img src="./images/133321483-1675276782650227-798268894761561921-o-637454363386116368.jpg_480x320.jpg"
                             alt="">
-                        <div class="save">
-                            <div class="save_img">
-                                <img src="./images/save-fill.svg" alt="">
-
-                                LƯU
-                            </div>
-
+                        <div class="hv_btn_save">
+                            <button><i></i>Lưu</button>
                         </div>
                     </div>
                     <div class="title">
-                        <h3>Thiết kế công trình Phan Thiết House với lối kiến trúc hiện đại thoát khỏi sự ồn ào của cuộc
-                            sống</h3>
+                        <h3>Thân thương hai tiếng "Tổ ấm"</h3>
                     </div>
                     <div class="proflie_post">
                         <div class="people">
@@ -476,47 +382,49 @@
                                 <p>An Quỳnh</p>
                             </a>
                         </div>
-                        <div class="share">
-                            <a href=""><img src="./images/chia-se.svg" alt=""></a>
-                            <div class="sotical">
-                                <label for="">
-                                    <span class="lb_share"></span>Chia Sẻ
-                                </label>
-                                <ul class="share-social">
-                                    <li><a href="#"><img src="./images/fb.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="./images/ins.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="./images/zalo.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="./images/in.svg" alt=""></a></li>
+                        <div class="menu_icon">
+                            <div class="share">
+                                <a href=""><img class="share_img" src="./images/chia-se.svg" alt=""></a>
+                                <div class="sotical">
+                                    <label for="">
+                                        <span class="lb_share"></span>Chia Sẻ
+                                    </label>
+                                    <ul class="share-social">
+                                        <li><a href="#"><img src="./images/fb.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="./images/ins.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="./images/zalo.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="./images/in.svg" alt=""></a></li>
 
 
-                                </ul>
-                                <label for="" class="lb_copy">
-                                    <a href="#"> <span class="copy_url"></span>Sao chép liên kết</a>
-                                </label>
+                                    </ul>
+                                    <label for="" class="lb_copy">
+                                        <a href="#"> <span class="copy_url"></span>Sao chép liên kết</a>
+                                    </label>
+                                </div>
+
                             </div>
-                        </div>
-                        <div class="count">
-                            <img src="./images/view-02.svg" alt=""><span>2019</span>
+                            <div class="count">
+                                <img src="./images/view-02.svg" alt=""><span>2019</span>
+                            </div>
+                            <div class="lb_save">
+                                <img src="./images/save-fill.svg" alt=""><span>10</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <div class="col col3">
+            <div class="coll col3">
                 <div class="item">
                     <div class="img_item">
                         <img src="./images/133321483-1675276782650227-798268894761561921-o-637454363386116368.jpg_480x320.jpg"
                             alt="">
-                        <div class="save">
-                            <div class="save_img">
-                                <img src="./images/save-fill.svg" alt="">
-                                LƯU
-                            </div>
-
+                        <div class="hv_btn_save">
+                            <button><i></i>Lưu</button>
                         </div>
                     </div>
                     <div class="title">
-                        <h3>Lã House - Công trình khách sạn và căn hộ cho thuê độc đáo rộng 160m2 tại Nha Trang</h3>
+                        <h3>Thân thương hai tiếng "Tổ ấm"</h3>
                     </div>
                     <div class="proflie_post">
                         <div class="people">
@@ -526,34 +434,145 @@
                                 <p>An Quỳnh</p>
                             </a>
                         </div>
-                        <div class="share">
-                            <a href=""><img src="./images/chia-se.svg" alt=""></a>
-                            <div class="sotical">
-                                <label for="">
-                                    <span class="lb_share"></span>Chia Sẻ
-                                </label>
-                                <ul class="share-social">
-                                    <li><a href="#"><img src="./images/fb.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="./images/ins.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="./images/zalo.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="./images/in.svg" alt=""></a></li>
+                        <div class="menu_icon">
+                            <div class="share">
+                                <a href=""><img class="share_img" src="./images/chia-se.svg" alt=""></a>
+                                <div class="sotical">
+                                    <label for="">
+                                        <span class="lb_share"></span>Chia Sẻ
+                                    </label>
+                                    <ul class="share-social">
+                                        <li><a href="#"><img src="./images/fb.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="./images/ins.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="./images/zalo.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="./images/in.svg" alt=""></a></li>
 
 
-                                </ul>
-                                <label for="" class="lb_copy">
-                                    <a href="#"> <span class="copy_url"></span>Sao chép liên kết</a>
-                                </label>
+                                    </ul>
+                                    <label for="" class="lb_copy">
+                                        <a href="#"> <span class="copy_url"></span>Sao chép liên kết</a>
+                                    </label>
+                                </div>
+
                             </div>
-
-                        </div>
-                        <div class="count">
-                            <img src="./images/view-02.svg" alt=""><span>2019</span>
+                            <div class="count">
+                                <img src="./images/view-02.svg" alt=""><span>2019</span>
+                            </div>
+                            <div class="lb_save">
+                                <img src="./images/save-fill.svg" alt=""><span>10</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
-           
+            <div class="coll col3">
+                <div class="item">
+                    <div class="img_item">
+                        <img src="./images/133321483-1675276782650227-798268894761561921-o-637454363386116368.jpg_480x320.jpg"
+                            alt="">
+                        <div class="hv_btn_save">
+                            <button><i></i>Lưu</button>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h3>Thân thương hai tiếng "Tổ ấm"</h3>
+                    </div>
+                    <div class="proflie_post">
+                        <div class="people">
+                            <a href=""><img
+                                    src="./images/foody-mobile-cafe4-jpg-414-635773918024009959-637441439845895746.jpg_80x80.jpg"
+                                    alt="">
+                                <p>An Quỳnh</p>
+                            </a>
+                        </div>
+                        <div class="menu_icon">
+                            <div class="share">
+                                <a href=""><img class="share_img" src="./images/chia-se.svg" alt=""></a>
+                                <div class="sotical">
+                                    <label for="">
+                                        <span class="lb_share"></span>Chia Sẻ
+                                    </label>
+                                    <ul class="share-social">
+                                        <li><a href="#"><img src="./images/fb.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="./images/ins.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="./images/zalo.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="./images/in.svg" alt=""></a></li>
+
+
+                                    </ul>
+                                    <label for="" class="lb_copy">
+                                        <a href="#"> <span class="copy_url"></span>Sao chép liên kết</a>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="count">
+                                <img src="./images/view-02.svg" alt=""><span>2019</span>
+                            </div>
+                            <div class="lb_save">
+                                <img src="./images/save-fill.svg" alt=""><span>10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="coll col3">
+                <div class="item">
+                    <div class="img_item">
+                        <img src="./images/133321483-1675276782650227-798268894761561921-o-637454363386116368.jpg_480x320.jpg"
+                            alt="">
+                        <div class="hv_btn_save">
+                            <button><i></i>Lưu</button>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h3>Thân thương hai tiếng "Tổ ấm"</h3>
+                    </div>
+                    <div class="proflie_post">
+                        <div class="people">
+                            <a href=""><img
+                                    src="./images/foody-mobile-cafe4-jpg-414-635773918024009959-637441439845895746.jpg_80x80.jpg"
+                                    alt="">
+                                <p>An Quỳnh</p>
+                            </a>
+                        </div>
+                        <div class="menu_icon">
+                            <div class="share">
+                                <a href=""><img class="share_img" src="./images/chia-se.svg" alt=""></a>
+                                <div class="sotical">
+                                    <label for="">
+                                        <span class="lb_share"></span>Chia Sẻ
+                                    </label>
+                                    <ul class="share-social">
+                                        <li><a href="#"><img src="./images/fb.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="./images/ins.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="./images/zalo.svg" alt=""></a></li>
+                                        <li><a href="#"><img src="./images/in.svg" alt=""></a></li>
+
+
+                                    </ul>
+                                    <label for="" class="lb_copy">
+                                        <a href="#"> <span class="copy_url"></span>Sao chép liên kết</a>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="count">
+                                <img src="./images/view-02.svg" alt=""><span>2019</span>
+                            </div>
+                            <div class="lb_save">
+                                <img src="./images/save-fill.svg" alt=""><span>10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
         </div>
         <div class="page">
             <ul>
@@ -588,7 +607,7 @@
                 bơi, khu tiệc ngoài trời, gara,...</p>
             <p>Mời bạn tham khảo một số mẫu biệt thự đẹp do Homedy tổng hợp dưới đây:</p>
             <div class="img_house">
-                <img style="width: 100%;" src="./images/biet-thu-mini-01-637583999571852228.jpg" alt="">
+                <img src="./images/biet-thu-mini-01-637583999571852228.jpg" alt="">
             </div>
             <p>Mẫu biệt thự mini phù hợp với không gian nhà ở đô thị đông đúc. Mẫu biệt thự mini giá rẻ 2 tầng mang
                 phong cách hiện đại hiện đại, hoàn toàn không có những chi tiết thừa, chi tiết thiết kế rườm rà.</p>
@@ -596,7 +615,7 @@
                 đại một các khoa học, thông minh giúp hạn chế tối đa chi phí. Trong khi đó, vẫn đảm bảo được các công
                 năng của căn nhà, mang tới không gian sống tiện nghi cho bạn.</p>
             <div class="img_house">
-                <img style="width: 100%;" src="./images/biet-thu-san-vuon-02-637583999854933050.jpg" alt="">
+                <img src="./images/biet-thu-san-vuon-02-637583999854933050.jpg" alt="">
             </div>
             <p>Mẫu biệt thự sân vườn này được thiết kế với hệ thống mái thái sậm màu, tương phản với nền sơn trắng. Cách
                 phối màu này khiến căn nhà trở nên ấn tượng và bắt mắt hơn. </p>
@@ -607,7 +626,7 @@
             <p>Phòng bếp được đặt tách biệt nhằm hạn chế ám mùi vào các không gian khác. Phòng tắm và wc được đặt ở cuối
                 nhà để tạo sự kín đáo, thuận tiện khi sử dụng.</p>
             <div class="img_house">
-                <img style="width: 100%;" src="./images/biet-thu-chu-l-3-637584007089363963.jpg" alt="">
+                <img src="./images/biet-thu-chu-l-3-637584007089363963.jpg" alt="">
             </div>
             <p>Mẫu biệt thự đẹp chữ L được xây dựng với hệ mái thái đỏ tươi kiểu truyền thống. Mái nhà có độ dốc thoai
                 thoải vừa phải giúp thoát nước dễ dàng. </p>
@@ -615,11 +634,14 @@
                 cạnh nhau. Đây là kiểu biệt thự nhà vườn phổ biến, đặc trưng cho các công trình nhà biệt thự tại Việt
                 Nam.</p>
             <div class="img_house">
-                <img style="width: 100%;" src="./images/biet-thu-hien-dai-4-637584000059176222.jpg" alt="">
+                <img src="./images/biet-thu-hien-dai-4-637584000059176222.jpg" alt="">
             </div>
             <p>Phong cách nhà hiện đại với 4 phòng ngủ đặt ngay sát cửa chính, cho tầm nhìn “xanh”, vô cùng thoáng đãng
                 ra khoảng sân trước nhà. Phía sau là phòng khách, phòng thờ, các không gian chung được bố trí đơn giản.
             </p>
+        </div>
+        <div class="share_repos">
+
         </div>
     </div>
     <footer>
@@ -664,16 +686,20 @@
             </div>
             <div class="footer_ four">
                 <div class="title_footer">KẾT NỐI VỚI CHÚNG TÔI</div>
-                <ul>
+                <ul class="with_connect">
                     <li><a href="#"><img src="./images/fb.svg" alt=""></a></li>
                     <li><a href="#"><img src="./images/in.svg" alt=""></a></li>
                     <li><a href="#"><img src="./images/twitter.svg" alt=""></a></li>
                 </ul>
                 <div class="title_footer">Tải ứng dụng trên điện thoại</div>
-                <ul>
-                    <li><img src="./images/app-store.png" alt=""><a href="#"></a></li>
-                    <li><img src="./images/google-play.png" alt=""><a href="#"></a></li>
+
+                <ul class="down">
+                    <li><a href="#"><img src="./images/apple.png" alt=""> <span> App Store</span></a></li>
+                    <li><a href="#"><img src="./images/ch-play.png" alt=""> <span>Google Play</span></a></li>
+
                 </ul>
+
+
             </div>
         </div>
         <div class="footer_end">
@@ -686,25 +712,62 @@
                     thông. Người đại diện: ông Nguyễn Bá Đức.
                 </div>
                 <div class="icon_addr">
-                    <div>
-                        <!-- <img src="./images/icon-footer.jpg" alt=""> -->
-                    </div>
+
+                    <img src="./images/dangky.png" alt="">
+
                 </div>
             </div>
         </div>
 
-        <a href="#pos_index">
-            <div class="upTop"></div>
-        </a>
 
-        <div class="fix-bottom">
-            <button class="btn-reg">
-                <div class="btn-reg-content">
-                    <i></i>Đăng ký nhận tư vấn
-                </div>
-            </button>
-        </div>
     </footer>
+    <a href="#pos_index">
+        <div class="upTop"></div>
+    </a>
+
+    <div class="fix-bottom">
+        <button class="btn-reg">
+            <div class="btn-reg-content">
+                <i></i>Đăng ký nhận tư vấn
+            </div>
+        </button>
+    </div>
+    <div class="foot_responsiv">
+        <div class="title_footer">VỀ HOMEDY.COM</div>
+        <div class="about_me">
+            <a href="#">Tin tức</a> -
+            <a href="#">Giới thiệu</a> -
+            <a href="#">Tuyển dụng</a> -
+            <a href="#">Quy chế hoạt động</a> -
+            <a href="#">Báo giá</a> -
+            <a href="#">KM 2021 * </a><b>HOT</b> -
+            <a href="#">CT Happy Homedy * </a><b>HOT</b>
+        </div>
+        <div class="sotical_ft">
+            <ul>
+                <li><a href="#"><img src="./images/fb.svg" alt=""></a></li>
+                <li><a href="#"><img src="./images/in.svg" alt=""></a></li>
+                <li><a href="#"><img src="./images/twitter.svg" alt=""></a></li>
+
+            </ul>
+        </div>
+        <div class="title_footer">TẢI ỨNG DỤNG TRÊN ĐIỆN THOẠI</div>
+        <div class="download">
+            <ul>
+                <li><a href="#"><img src="./images/apple.png" alt=""> <span> App Store</span></a></li>
+                <li><a href="#"><img src="./images/ch-play.png" alt=""> <span>Google Play</span></a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="about">
+        <div class="about_content">
+            © 2020 - Bản quyền của Công ty TNHH Homedy - Hotline: <a href="">0768.283.968</a>
+        </div>
+        <div class="img_about">
+            <img src="./images/dangky.png" alt="">
+        </div>
+    </div>
     <script src="./js/index.js"></script>
 </body>
 
