@@ -33,6 +33,9 @@ html{
     letter-spacing: .01em;
     scroll-behavior: smooth;
 }
+a{
+  text-decoration: none;
+}
 body{
     margin: 0;
 }
@@ -444,7 +447,8 @@ header{
         //margin-top: 19px;
         position: absolute;
         background-color: $color_white;
-        box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+      //  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+    box-shadow :0 8px 16px 0 rgba(0,0,0,0.2);
         min-width: 160px;
         z-index: 2;
         left: 10px;

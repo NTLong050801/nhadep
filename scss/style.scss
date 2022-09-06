@@ -114,7 +114,7 @@ $color_white : #fff;
     width: 100%;
     // position: relative;
     background-color: $color_white;
-    box-shadow: 0 0px 22px 0 rgb(0 0 0 / 10%);
+    box-shadow: 0 0px 22px 0 rgba(0,0,0,0.1);
      .content_search{
         display: inline-block;
         //  margin: 0 10%;
@@ -149,9 +149,9 @@ $color_white : #fff;
      
                 ul{
                    @extend .btn-border;
-                   box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 
-                   0 8px 10px 1px rgb(0 0 0 / 14%),
-                    0 3px 14px 2px rgb(0 0 0 / 12%);
+                   box-shadow: 0 5px 5px -3px rgba(0 ,0, 0, 0.2),
+                   0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                    0 3px 14px 2px rgba(0 ,0 ,0, 0.12);
                     padding: 0;
                     list-style: none;
                     background-color: $color_white;
@@ -314,7 +314,7 @@ $color_white : #fff;
                 color: #54657e !important;
                 padding: 10px 16px;
                 border-radius: 5px;
-                box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+                box-shadow: 0 1px 2px 0 rgba(0, 0 ,0, 0.10);
                 background: #fff;
                 margin-left: 10px;
                 text-transform: uppercase;

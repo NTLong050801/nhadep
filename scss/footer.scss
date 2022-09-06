@@ -121,7 +121,7 @@ footer{
         border-radius: 21px;
         border: none;
         background-color: #eb5155;
-        box-shadow: 0 0 8px 0 rgb(0 0 0 / 20%);
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.20);
         color: #fff !important;
         font-size: 14px;
         font-weight: normal !important;
@@ -266,7 +266,7 @@ footer{
     height: 400px;
     text-align: center;
     padding: 25px 40px;
-    box-shadow: 0 5px 25px 0 rgb(0 0 0 / 15%);
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0,  0.15);
     border-radius: 8px;
     position: absolute;
     top: 45%;
